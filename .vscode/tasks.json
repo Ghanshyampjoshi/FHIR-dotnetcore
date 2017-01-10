@@ -1,33 +1,16 @@
 {
     "version": "0.1.0",
     "isShellCommand": true,
-    "suppressTaskName": true,
-
-    "linux": {
-        "command": "sh",
-        "args": ["-c"]
-    },
-    "osx": {
-        "command": "sh",
-        "args": ["-c"]
-    },
-    "windows": {
-        "command": "powershell",
-        "args": ["-Command"]
-    },
+    "showOutput": "always",
+    "command": "dotnet",
+    "args": [],
 
     "tasks": [
         {
-            "taskName": "generate",
-            "args": ["node generate.js"],
-            "isBuildCommand": true,
-            "isWatching": false
-        },
-        {
             "taskName": "build",
-            "args": ["dotnet build ."],
+            "args": [],
             "isBuildCommand": true,
-            "isWatching": false,
+//            "isWatching": false,
             "problemMatcher": "$msCompile"
         }
     ]

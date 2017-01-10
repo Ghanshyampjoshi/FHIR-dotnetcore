@@ -1,7 +1,6 @@
 **/.DS_Store
 **/bin
 **/obj
-/templates
 /node_modules
 /generated
 /project.lock.json

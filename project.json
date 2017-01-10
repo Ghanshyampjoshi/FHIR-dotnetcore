@@ -8,5 +8,8 @@
     },
     "frameworks":{
         "netstandard1.3":{}
+    },
+    "scripts": {
+        "precompile": "node generate.js" 
     }
 }

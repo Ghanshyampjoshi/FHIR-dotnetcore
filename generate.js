@@ -20,7 +20,7 @@ var processXsd = function(filename)
 
     parser.on("object", function(name, schema) 
     {
-        console.log("Processing " + filename + "...");
+        console.log("Pre-processing " + filename + "...");
 
         var destFile = destFolder + filename.replace(".xsd", ".cs");
         var types = getTypes(schema);
@@ -34,7 +34,7 @@ var processXsd = function(filename)
             "}";    
 
         fs.writeFile(destFile, text);
-        console.log("End.");
+        console.log("Finished pre-processing.");
     }); 
 
     parser.start();
