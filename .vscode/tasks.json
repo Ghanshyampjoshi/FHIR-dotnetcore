@@ -7,11 +7,20 @@
 
     "tasks": [
         {
+            "taskName": "restore",
+            "args": [],
+            "isBuildCommand": true
+        },
+        {
             "taskName": "build",
             "args": [],
             "isBuildCommand": true,
-//            "isWatching": false,
             "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "pack",
+            "args": [],
+            "isBuildCommand": false
         }
     ]
 }
