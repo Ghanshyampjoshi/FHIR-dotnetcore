@@ -4,3 +4,4 @@
 /templates
 /node_modules
 /generated
+/project.lock.json
