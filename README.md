@@ -13,6 +13,6 @@ FHIR DSTU-2 entities compatible with .Net Core and Visual Studio Code.
 - NPM xml2object (`npm install --save-dev xml2object`)
 
 ## Generation process
-The code is auto-generated from the FHIR DSTU-2 schema file (`fhir-single.xsd`) by the script `generate.js`
+The code is auto-generated from the FHIR DSTU-2 schema file (`fhir-codegen-xsd\fhir-single.xsd`) by the script `generate.js`
 
-After that, the generated file (`fhir-single.cs`) is compiled using `dotnet`
+After that, the generated file (`generated\fhir-single.cs`) is compiled using `dotnet build`
